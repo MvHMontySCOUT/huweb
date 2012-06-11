@@ -1,0 +1,1 @@
+(ns huweb.models.issuetracker)

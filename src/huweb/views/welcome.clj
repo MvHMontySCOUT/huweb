@@ -1,5 +1,6 @@
 (ns huweb.views.welcome
-  (:require [huweb.views.common :as common])
+  (:require [huweb.views.common :as common]
+            [huweb.models.issuetracker :as issuetracker])
   (:use [noir.core]
         [hiccup.page]
         [hiccup.middleware]
@@ -104,7 +105,7 @@ For testing we use the [Java benchmark](https://github.com/HUSACCT/HUSACCT-Bench
 
 (defpage "/issues" {:as user}
 	(common/layout
-	  [:p "Dit is onze issue tracker. Zie je een bug of mogelijkheid om het product te verbeteren schroom dan niet om dit ons te melden."]
+	  [:p "This is our issue tracker. You can inform us about any bug, improvement or other issue by sending us this form."]
 	  (form-to [:post "/issuetracker"]
       (formtracker user)
       (submit-button "send")
