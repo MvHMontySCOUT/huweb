@@ -4,7 +4,7 @@ html {
 	border:0;
 }
 
-body, div, span, object, iframe,
+/*body, div, span, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, code,
 del, dfn, em, img, q, dl, dt, dd, ol, ul, li,
@@ -20,7 +20,7 @@ hgroup, nav, section {
 	font-size: 100%;
 	font-family: inherit;
 	vertical-align: baseline;
-}
+}*/
 
 article, aside, dialog, figure, footer, header,
 hgroup, nav, section {
