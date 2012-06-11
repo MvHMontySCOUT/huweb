@@ -133,17 +133,27 @@ The project is ongoing and is meant to be completed around July 2012."]))
          (common/layout
            [:p "Welcome to huweb"]))
 
-(defpage "/issues" []
-(common/layout
-  [:p "Dit is onze issue tracker. Zie je een bug of mogelijkheid om het product te verbeteren schroom dan niet om dit ons te melden."]
- (form-to [:post "/issuetracker"]
-          (label "name" "Name: ")
-          (text-field "name")[:br]
-          (label "mail" "E-mail: ")
-          (text-field "mail")[:br]
-          (label "message" "Bericht: ")
-          (text-area "message")[:br]
-          (submit-button "send"))))
+(defpartial formtracker [{:keys [name mail message]}]
+  (label "namee" "Naeme: ")
+  (text-field "name" name)[:br]
+  (label "mail" "E-mail: ")
+  (text-field "mail" mail)[:br]
+  (label "message" "Bericht: ")
+  (text-area "message" message)[:br]
+)
+
+(defpage "/issues" {:as user}
+	(common/layout
+	  [:p "Dit is onze issue tracker. Zie je een bug of mogelijkheid om het product te verbeteren schroom dan niet om dit ons te melden."]
+	  (form-to [:post "/issuetracker"]
+      (formtracker user)
+      (submit-button "send")
+   )
+  )
+)
+
+
+
 
 (defpage "/download" []
          (common/layout
