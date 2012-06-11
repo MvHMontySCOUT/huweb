@@ -1,24 +1,26 @@
 html, body{
 	background:#DDD;
 	min-height: 100%;
-	height: auto;
+	height: 100%;
+	margin:0;
+	padding:0;
+	border:0;
 }
 
 #wrapper{
 	width: 800px;
 	margin: 0 auto;
 	background:#FFF;
-	height: 100%;
+	min-height: 100%;
+	height: auto;
 }
 
 #menu{
-	background: #DDD;
 	height: 50px;
 }
 
 a.menu{
-	padding: 5px;
-	margin: 5px;
+	padding: 15px;
 	color: blue;
 	line-height:50px;
 }
@@ -26,6 +28,11 @@ a.menu{
 a.menu:hover{
 	text-decoration: none;
 	background-color: #000;
+}
+
+p, h1, h2, h3, h4, h5, h6{
+	margin-left: 5px;
+	margin-right: 5px;
 }
 
 .download {

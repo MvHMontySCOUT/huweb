@@ -12,7 +12,6 @@
             (html5
               [:head
                [:title "huweb"]
-               (include-css "/css/reset.css")
                (include-css "/css/static.css")]
               [:body
                [:div#wrapper
