@@ -17,10 +17,10 @@
               [:body
                [:div#wrapper
                 [:div#menu
-                (link-to "/home" "Home")
-                (link-to "/download" "Download")
-                (link-to "/feedback" "Feedback")
-                (link-to "/issues" "Issues")
-                (link-to "/about" "About")
+                (link-to {:class "menu"} "/home" "Home")
+                (link-to {:class "menu"} "/download" "Download")
+                (link-to {:class "menu"} "/feedback" "Feedback")
+                (link-to {:class "menu"} "/issues" "Issues")
+                (link-to {:class "menu"} "/about" "About")
                 ]
                 content]]))
