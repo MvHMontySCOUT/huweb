@@ -3,6 +3,18 @@
             [noir.content.getting-started])
   (:use [noir.core :only [defpage]]))
 
-(defpage "/welcome" []
+(defpage "/Home" []
+         (common/layout
+           [:p "Welcome to huweb"]))
+
+(defpage "/About" []
+         (common/layout
+           [:p "Welcome to huweb"]))
+
+(defpage "/Feedback" []
+         (common/layout
+           [:p "Welcome to huweb"]))
+
+(defpage "/issues" []
          (common/layout
            [:p "Welcome to huweb"]))
