@@ -135,11 +135,15 @@ The project is ongoing and is meant to be completed around July 2012."]))
 
 (defpage "/issues" []
 (common/layout
-
-(form-to [:post "/login"]
-               (text-field "Username")
-               (password-field "Password")
-               (submit-button "Login"))))
+  [:p "Dit is onze issue tracker. Zie je een bug of mogelijkheid om het product te verbeteren schroom dan niet om dit ons te melden."]
+ (form-to [:post "/issuetracker"]
+          (label "name" "Name: ")
+          (text-field "name")[:br]
+          (label "mail" "E-mail: ")
+          (text-field "mail")[:br]
+          (label "message" "Bericht: ")
+          (text-area "message")[:br]
+          (submit-button "send"))))
 
 (defpage "/download" []
          (common/layout
