@@ -18,3 +18,7 @@
 (defpage "/issues" []
          (common/layout
            [:p "Welcome to huweb"]))
+
+(defpage "/Download" []
+         (common/layout
+           [:p "Welcome to huweb"]))
