@@ -1,2 +1,3 @@
-Line to be appended
-hoi
+[:message "hkjhk"] [:mail "jljl"] [:name "k;oj"]
+[:message "beide"] [:mail "martin"] [:name "jorik"]
+[:message "gjrepgje"] [:mail "jgpewjgfewp"] [:name "tkfrepwj"]

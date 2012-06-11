@@ -1,6 +1,6 @@
-(ns huweb.models.issuetracker)
+(ns huweb.models.issuetracker
+  (:use clojure.java.io))
 
 (defn writeissue! [issue]
-  (use 'clojure.java.io)
  (with-open [wrtr (writer "test.txt" :append true)]
-  (.write wrtr "hoi")))
+  (.write wrtr (str (apply str (interpose " " issue)) "\n"))))
