@@ -13,6 +13,7 @@
 (defpage "/home" []
          (common/layout
            [:h1 "HUSACCT project"]
+           (image {:class "right"} "image/husacct.png" "HUSACCT")
            [:p "What does HUSACCT Stand for?"]
            [:p "It stands for: Software Architecture Comformance Checking Tool<br>HU stands for: [Hogeschool Utrecht](http://international.hu.nl/) (HU University of Applied Sciences Utrecht, The Netherlands. The school at which this project is taken place.)"]
            [:h2 "What is a Software Architecture Conformance Checking Tool?"]
