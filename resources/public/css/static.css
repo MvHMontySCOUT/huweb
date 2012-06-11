@@ -16,13 +16,11 @@ html, body{
 }
 
 #menu{
-	background: #DDD;
 	height: 50px;
 }
 
 a.menu{
-	padding: 5px;
-	margin: 5px;
+	padding: 15px;
 	color: blue;
 	line-height:50px;
 }

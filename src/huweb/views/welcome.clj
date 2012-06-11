@@ -86,7 +86,7 @@ For testing we use the [Java benchmark](https://github.com/HUSACCT/HUSACCT-Bench
 
 (defpage "/about" []
          (common/layout
-           [:p "Welcome to huweb"]))
+           [:h1 "This is the about page"]))
 
 (defpage "/feedback" []
          (common/layout
