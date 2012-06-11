@@ -91,7 +91,7 @@ For testing we use the [Java benchmark](https://github.com/HUSACCT/HUSACCT-Bench
 
 (defpage "/feedback" []
          (common/layout
-           [:p "Welcome to huweb"]))
+           [:span "To give feedback please click on this link "] (mail-to "jorikkraaikamp@gmail.com" "here") [:span ". If you have a bug to report please go to the "] (link-to "/issues" "issues page")))
 
 (defpartial formtracker [{:keys [name mail message]}]
   (label "namee" "Naeme: ")

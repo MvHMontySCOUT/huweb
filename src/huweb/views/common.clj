@@ -11,7 +11,7 @@
 (defpartial layout [& content]
             (html5
               [:head
-               [:title "huweb"]
+               [:title "husacct information"]
                (include-css "/css/static.css")]
               [:body
                [:div#wrapper
@@ -22,4 +22,16 @@
                 (link-to {:class "menu"} "/issues" "Issues")
                 (link-to {:class "menu"} "/about" "About")
                 ]
-                content]]))
+                [:div#featured [:ul [:li [:p "<a href=\"portfolio_single.html\"><span>Read about this project</span><img src=\"image/husacct.png\" alt=\"\" /></a>"]]]]
+                [:div#content content]
+                [:div#footer
+                [:div#left
+                 [:p "Made possible by"]
+                 [:ul [:li "Leo Pruijt"]
+                  [:li "Christian Köppe"]
+                  [:li "Michiel Borkent"]]]
+                [:div#right
+                 [:p "Students are"]
+                 [:ul [:li "Martin van Haeften"]
+                  [:li "Jorik Kraaikamp"]]]]
+                ]]))

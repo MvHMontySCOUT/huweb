@@ -13,6 +13,11 @@ html, body{
 	background:#FFF;
 	min-height: 100%;
 	height: auto;
+	position:relative;
+}
+
+#content{
+	padding-bottom:130px;
 }
 
 #menu{
@@ -37,6 +42,26 @@ p, h1, h2, h3, h4, h5, h6{
 
 .right{
 	float: right;
+}
+
+#footer{
+	position: absolute;
+	bottom: 0;
+	width: 800px;
+	background-color: #DDD;
+}
+
+#left{
+	float: left;
+	width: 399px;
+}
+#right{
+	float: right;
+	width: 399px;
+}
+
+#footer ul{
+	list-style: none;
 }
 
 .download {
