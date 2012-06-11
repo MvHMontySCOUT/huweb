@@ -22,7 +22,6 @@
                 (link-to {:class "menu"} "/issues" "Issues")
                 (link-to {:class "menu"} "/about" "About")
                 ]
-                [:div#featured [:ul [:li [:p "<a href=\"portfolio_single.html\"><span>Read about this project</span><img src=\"image/husacct.png\" alt=\"\" /></a>"]]]]
                 [:div#content content]
                 [:div#footer
                 [:div#left
