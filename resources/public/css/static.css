@@ -1,6 +1,7 @@
 html, body{
 	background:#DDD;
-	height: 100%;
+	min-height: 100%;
+	height: auto
 }
 
 #wrapper{
