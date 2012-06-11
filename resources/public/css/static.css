@@ -1,0 +1,16 @@
+#menu{
+	background: #DDD;
+	height: 50px;
+}
+
+a{
+	padding: 5px;
+	margin: 5px;
+	color: blue;
+	line-height:50px;
+}
+
+a:hover{
+	text-decoration: none;
+	background-color: #000;
+}

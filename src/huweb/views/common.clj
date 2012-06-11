@@ -12,10 +12,16 @@
             (html5
               [:head
                [:title "huweb"]
-               (include-css "/css/reset.css")]
+               (include-css "/css/reset.css")
+               (include-css "/css/static.css")]
               [:body
                [:div#menu
-                [:p "test"]]
-                (link-to "http://www.webnoir.org" "Noir")
+                (link-to "/home" "Home")
+                (link-to "/download" "Download")
+                (link-to "/feedback" "Feedback")
+                (link-to "/issues" "Issues")
+                (link-to "/about" "About")
+                ]
+                
                [:div#wrapper
                 content]]))
