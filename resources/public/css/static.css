@@ -1,3 +1,15 @@
+html, body{
+	background:#DDD;
+	height: 100%;
+}
+
+#wrapper{
+	width: 800px;
+	margin: 0 auto;
+	background:#FFF;
+	height: 100%;
+}
+
 #menu{
 	background: #DDD;
 	height: 50px;
