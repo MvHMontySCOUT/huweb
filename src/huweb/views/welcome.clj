@@ -106,13 +106,16 @@ For testing we use the <a href=\"https://github.com/HUSACCT/HUSACCT-BenchmarkApp
 (defpage "/issues" {:as user}
 	(common/layout
 	  [:p "This is our issue tracker. You can inform us about any bug, improvement or other issue by sending us this form."]
-	  (form-to [:post "/issuetracker"]
+	  (form-to [:post "/thanks"]
       (formtracker user)
       (submit-button "send")
    )
   )
 )
 
+(defpage "/thanks" []
+         (common/layout
+           [:p "thanks for letting us know about your issue!"]))
 
 
 
