@@ -7,7 +7,8 @@
         [hiccup.def]
         [hiccup.core]
         [hiccup.compiler]
-        [hiccup.element]))
+        [hiccup.element]
+        [hiccup.form]))
 
 (defpage "/home" []
          (common/layout
@@ -133,8 +134,12 @@ The project is ongoing and is meant to be completed around July 2012."]))
            [:p "Welcome to huweb"]))
 
 (defpage "/issues" []
-         (common/layout
-           [:p "Welcome to huweb"]))
+(common/layout
+
+(form-to [:post "/login"]
+               (text-field "Username")
+               (password-field "Password")
+               (submit-button "Login"))))
 
 (defpage "/download" []
          (common/layout
