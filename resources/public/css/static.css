@@ -69,6 +69,15 @@ p, h1, h2, h3, h4, h5, h6{
 	list-style: none;
 }
 
+.row{
+	border-top: 1px solid #000;
+	border-bottom: 1px solid #000;
+}
+.red{color: #ff0000;}
+.nospacing{
+	margin: 0; padding: 0;
+}
+
 .download {
 	text-decoration: none;
 	margin-left: 5px;

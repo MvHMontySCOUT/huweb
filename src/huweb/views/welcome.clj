@@ -95,7 +95,7 @@ For testing we use the [Java benchmark](https://github.com/HUSACCT/HUSACCT-Bench
            [:span "To give feedback please click on this link "] (mail-to "jorikkraaikamp@gmail.com" "here") [:span ". If you have a bug to report please go to the "] (link-to "/issues" "issues page")))
 
 (defpartial formtracker [{:keys [name mail message]}]
-  (label "namee" "Naeme: ")
+  (label "name" "Name: ")
   (text-field "name" name)[:br]
   (label "mail" "E-mail: ")
   (text-field "mail" mail)[:br]
@@ -106,9 +106,11 @@ For testing we use the [Java benchmark](https://github.com/HUSACCT/HUSACCT-Bench
 (defpage "/issues" {:as issue}
 	(common/layout
 	  [:p "This is our issue tracker. You can inform us about any bug, improvement or other issue by sending us this form."]
+   [:div [:p (issuetracker/readissue!)] 
+    ]
 	  (form-to [:post "/thanks"]
       (formtracker issue)
-      (submit-button "send")
+      (submit-button {:class "download"} "send")
    )
   )
 )
@@ -116,7 +118,8 @@ For testing we use the [Java benchmark](https://github.com/HUSACCT/HUSACCT-Bench
 (defpage [:post "/thanks"] [:as issue]
   (issuetracker/writeissue! issue)
          (common/layout
-           [:p "thanks for letting us know about your issue!"]))
+           [:p "thanks for letting us know about your issue!"]
+           (link-to {:class "download"} "/issues" "Go back to the issues")))
 
 
 
@@ -126,4 +129,6 @@ For testing we use the [Java benchmark](https://github.com/HUSACCT/HUSACCT-Bench
            (link-to {:class "download"} "https://github.com/downloads/HUSACCT/HUSACCT/HUSACCT.jar" "HUSSACT stable")[:br][:br]
            (link-to {:class "download"} "https://github.com/downloads/HUSACCT/HUSACCT/HUSACCT-unstable.jar" "HUSSACT unstable")
            [:p "We also have a stable release with an increased heapsize. This jar is ment for scanning big projects."]
-           (link-to {:class "download"} "https://github.com/downloads/HUSACCT/HUSACCT/HUSACCT-launcher.jar" "HUSSACT stable increased heapsize")))
+           (link-to {:class "download"} "https://github.com/downloads/HUSACCT/HUSACCT/HUSACCT-launcher.jar" "HUSSACT stable increased heapsize")
+           [:p "Or checkout the code on Github. Feel free to fork the project and work on it yourself."]
+           (link-to {:class "download"} "https://github.com/HUSACCT/HUSACCT" "HUSSACT Code")))

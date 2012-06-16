@@ -1,3 +1,3 @@
-[:message "hkjhk"] [:mail "jljl"] [:name "k;oj"]
-[:message "beide"] [:mail "martin"] [:name "jorik"]
-[:message "gjrepgje"] [:mail "jgpewjgfewp"] [:name "tkfrepwj"]
+<div class='row'><p class='nospacing red'><b>issue:</b> een heel verhaal</p> <b>From:</b> Jorik Kraaikamp <a href='mailto:jorikkraaikamp@gmail.com'>jorikkraaikamp@gmail.com</a></div>
+<div class='row'><p class='nospacing red'><b>issue:</b> Hij doet het! mooi he!
+Goed gedaan jorik</p> <b>From:</b> Martin van Haeften <a href='mailto:mail@mvhmontyscout.nl'>mail@mvhmontyscout.nl</a></div>

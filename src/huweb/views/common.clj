@@ -30,7 +30,7 @@
                   [:li "Christian Köppe"]
                   [:li "Michiel Borkent"]]]
                 [:div#right
-                 [:p "Students are"]
+                 [:p "Site made by"]
                  [:ul [:li "Martin van Haeften"]
                   [:li "Jorik Kraaikamp"]]]]
                 ]]))

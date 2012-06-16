@@ -2,5 +2,8 @@
   (:use clojure.java.io))
 
 (defn writeissue! [issue]
- (with-open [wrtr (writer "test.txt" :append true)]
-  (.write wrtr (str (apply str (interpose " " issue)) "\n"))))
+  (with-open [wrtr (writer "test.txt" :append true)]
+    (.write wrtr (str "<div class='row'><p class='nospacing red'><b>issue:</b> " (issue :message) "</p> <b>From:</b> " (issue :name) " <a href='mailto:" (issue :mail) "'>" (issue :mail)"</a></div>\n"))))
+
+(defn readissue! []
+  (slurp "test.txt"))
