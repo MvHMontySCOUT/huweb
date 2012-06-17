@@ -1,0 +1,1 @@
+<div class='row'><p class='nospacing red'><b>issue:</b> Bij het exporteren wordt bij het gedeelte define de excepties van een regel wordten de from en de to mapping omgedraaid.</p> <b>From:</b> Jorik Kraaikamp <a href='mailto:jorikkraaikamp@gmail.com'>jorikkraaikamp@gmail.com</a></div>

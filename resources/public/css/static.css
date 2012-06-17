@@ -18,11 +18,42 @@ html, body{
 }
 
 #content{
-	padding-bottom:130px;
+	clear: both;
+	padding-bottom:60px;
 }
 
-#menu{
-	/*margin-top: 10px;*/
+label{
+	float: left;
+	width: 70px;
+}
+
+input[type=text]{
+	float:left;
+	padding: 5px;
+	margin-top: -5px;
+	width: 89%;
+}
+input[type=submit]{
+	clear: both;
+	margin-bottom: 10px;
+}
+
+textarea{
+	margin: 0;
+	float:left;
+	padding: 5px;
+	margin-top: -5px;
+	width: 89%;
+	resize: vertical;
+	height: 100px;
+}
+
+.clear{ clear:both}
+
+fieldset{
+	border: none;
+	clear:both;
+	margin-bottom: 5px;
 }
 
 a.menu{
