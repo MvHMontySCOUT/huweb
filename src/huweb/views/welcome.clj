@@ -18,7 +18,12 @@
 
 (defpage "/about" []
          (common/layout
-           [:h1 "This is the about page"]))
+           [:h1 "project"]
+           [:p "This project involves six teams from one class Bachelor Computer Science Informatics 2011-2012 around 4 to 5 people a team. Each team is responsible for a different service (control, analyze (Java and .NET), define, validate and architecture graphics)."]
+           [:h1 "Future"]
+           [:p "Our development will be continued after the official project stops, so keep an eye on our GitHub repository. Enthusiast students and teachers will happily participate the development community."]
+           )
+)
 
 (defpage "/feedback" []
          (common/layout
