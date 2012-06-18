@@ -1,1 +1,0 @@
-web: lein trampoline run -m huweb.server $PORT
